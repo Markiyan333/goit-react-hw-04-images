@@ -16,6 +16,7 @@ export default function App() {
     setPage(1);
   };
 
+
   return (
     <section className={css.App}>
       <div>
@@ -27,5 +28,6 @@ export default function App() {
         />
       </div>
     </section>
+    
   );
 }
