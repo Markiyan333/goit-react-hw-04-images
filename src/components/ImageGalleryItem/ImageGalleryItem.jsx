@@ -7,7 +7,7 @@ export const ImageGalleryItem = ({ webformatURL, largeImageURL, tags }) => {
   const [isModalShow, setisModalShow] = useState(false);
 
   const toogleModal = () => {
-    setisModalShow(prevState => !prevState);
+  setisModalShow(prevState => !prevState);
   };
 
   return (
