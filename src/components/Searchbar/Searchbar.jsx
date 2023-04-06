@@ -2,6 +2,7 @@ import { useState } from 'react';
 import css from './Searchbar.module.css';
 import PropTypes from 'prop-types';
 
+
 export const Searchbar = ({ handlFormSubmirt }) => {
   const [searchimg, setSearchimg] = useState('');
 
@@ -16,6 +17,7 @@ export const Searchbar = ({ handlFormSubmirt }) => {
   const handleChange = evt => {
     setSearchimg(evt.target.value);
   };
+
 
   const reset = () => {
     setSearchimg('');
@@ -42,5 +44,7 @@ export const Searchbar = ({ handlFormSubmirt }) => {
     </header>
   );
 };
+
+
 
 Searchbar.propTypes = { handlFormSubmirt: PropTypes.func.isRequired };

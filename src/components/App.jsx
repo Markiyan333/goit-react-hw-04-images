@@ -3,6 +3,7 @@ import { Searchbar } from './Searchbar/Searchbar';
 import { useState  } from 'react';
 import css from './App.module.css';
 
+
 export default function App() {
   const [newsearchimg, setNewsearchimg] = useState('');
   const [page, setPage] = useState(1);
@@ -16,7 +17,6 @@ export default function App() {
     setPage(1);
   };
 
-
   return (
     <section className={css.App}>
       <div>
@@ -28,6 +28,5 @@ export default function App() {
         />
       </div>
     </section>
-    
   );
 }

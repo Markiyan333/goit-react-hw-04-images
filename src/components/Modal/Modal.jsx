@@ -3,9 +3,7 @@ import { useEffect  } from 'react';
 import css from './Modal.module.css';
 import PropTypes from 'prop-types';
 
-
 const modalRoot = document.querySelector('#modal-root');
-
 export const Modal = ({ onClose, children }) => {
   useEffect(() => {
     const hendelKeyDown = e => {
